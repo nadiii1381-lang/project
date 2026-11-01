@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+	<meta charset="utf-8"><title>فرم ثبت اطلاعات</title>
+	<style>
+		body{background:#10b981;
+			justify-content: center;
+			display: flex;
+			color: black;}
+			.page{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+			}
+			.form-box{
+				background: white;
+				padding: 2rem;
+				border-radius: 10px;
+				box-shadow: 0 4px 8px rgb(0, 0, 0 / 0.1);
+				width: 400px;
+			}
+			h1{
+				text-align: center;
+				color: black;
+			}
+			input, select, textarea{
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				background:lightgray;
+			}
+			button{
+				width: 100%;
+				padding: 12px;
+				margin-top: 1.srem;
+				background: darkgreen;
+				color: white;
+			}
+		
+	</style>
+</head>
+<body>
+	<div class="page">
+	<div class="form-box">
+		<h1>معلومات شخصی</h1>
+
+	<form action="/save.php" method="post">
+		<label>نام :</label><br />
+		<input type="text" name="name"><br />
+		<label>نام پدر :</label><br />
+		<input type="text" name="father name"><br />
+		<label>نام خانوادگی :</label><br />
+		<input type="text" name="last name"><br />
+		<label>تاریخ تولد :</label>
+		<input type="date"></form>
+		<label>جنسیت :</label>
+		<input type="radio"name="gender">مرد
+		<input type="radio" name="gender">زن
+		<br />
+		<label>وضعیت تاهل :</label>
+		<input type="radio">مجرد
+		<input type="radio">متاهل
+		<br />
+		<label>شماره تذکره/پاسپورت :</label>
+		<input type="number"><br />
+		<h2><center>معلومات تماس </center></h2>
+		<label>شماره تماس :</label>
+		<input type="numbre"><br />
+		<label>شماره تماس اضطراری :</label>
+		<input type="number"><br />
+		<label>ایمیل:</label><br />
+		<input type="email" name="email"><br />
+		<label>ولایت :</label>
+		<select >
+			<option >هرات  </option>
+			<option >کابل</option>
+			<option>مزارشریف </option>
+			<option>کندهار </option>
+			<option>کندز </option>
+			<option>کنر </option>
+			<option>جلال آـباد </option>
+			<option>بامبان </option></select>
+			<h2><center>تحصیلات</center></h2><br />
+			<label>مدرک تحصیلی :</label>
+			<select>
+				<option>لیسانس</option>
+				<option>ماستر</option>
+				<option>دکترا</option><br /></select>
+
+				<label>رشته تحصیلی :</label>
+				<input type="text"><br />
+				<label>سال فراغت :</label>
+				<input type="date">
+			<h2><center>اسناد پیوست </center></h2>
+			<label>CV:</label>
+			<input type="file"><br />
+			<label>کاپی تذکره:</label>
+			<input type="file"><br />
+			<label>کاپی اسناد تحصیلی :</label>
+			<input type="file">
+			<br />
+
+		<label>نظریه :</label>
+		<textarea rows="3"></textarea>
+		<br />
+		<label>
+				<input type="checkbox" name="confirm" required>
+			
+			اینجانب تصدیق میکنم که معلومات فوق درست بوده و در صورت نادرستی مسولیت آن را میپذیرم. </label><br />
+		
+		<br /><button type="submit">ثبت معلومات</button>
+
+	</form></div></div></body></html>
